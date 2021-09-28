@@ -1,0 +1,14 @@
+<h2>Hello World!</h2>
+<h4>String Interpolation</h4>
+<p *ngIf="counter>=0">The title is: {{title|uppercase}}</p>
+<p *ngIf="counter<0">The title is: {{title|lowercase}}</p>
+<p>Counter: {{counter}}</p>
+<button (click)="incrementCounter()">Increment Counter</button>
+<button (click)="decrementCounter()">Decrement Counter</button>
+<p>Programming Languages</p>
+<ul>
+  <li *ngFor="let x of languages"> {{x}} </li>
+</ul>
+
+<app-todo></app-todo>
+<app-my-new-component></app-my-new-component>
